@@ -1,56 +1,28 @@
-body {
-    margin: 0;
-    height: 100%;
-}
-header.h1{
-    margin: 0;
-    height: 100%;
-}
-div.logo:hover {
-margin: 5px;
-
-float: center;
-width: 180px;
-}
-div.Power {
-margin: 5px;
-
-float: center;
-}
-div.Ui_buttons {
-display: flex;                  /* establish flex container */
-flex-direction: row;            /* default value; can be omitted */
-flex-wrap: nowrap;              /* default value; can be omitted */
-justify-content: space-around; /* switched from default (flex-start, see below) */
-margin: 5px;
-width: 250px;
-height:100px;
-}
-div.Set {
-display: flex;                  /* establish flex container */
-flex-direction: row;            /* default value; can be omitted */
-flex-wrap: nowrap;              /* default value; can be omitted */
-justify-content: space-around; /* switched from default (flex-start, see below) */
-margin: 5px;
-width: 250px;
-height:50px;
-}
-h1 {
-display: flex;                  /* establish flex container */
-flex-direction: row;            /* default value; can be omitted */
-flex-wrap: nowrap;              /* default value; can be omitted */
-justify-content: space-around; /* switched from default (flex-start, see below) */
-margin: 5px;
-float: center;
-width: 360px;
-height:100px;
-}
-
 div.player {
-display: flex;                  /* establish flex container */
-flex-direction: row;            /* default value; can be omitted */
-flex-wrap: nowrap;              /* default value; can be omitted */
-justify-content: space-around; /* switched from default (flex-start, see below) */
-margin: 5px;
-float: center;
+padding-top: 5%;
+width: 75%;
+height: 100%;
+margin:0 auto;
+
+}
+.player-main{
+width: 621px;
+height: 976px;
+background-repeat: no-repeat;
+margin:0 auto;
+
+}
+.player-cont{height: 100%;padding-top: 30%;}
+.player-head{width: 84%;height: 50%;margin: 0 auto;}
+.logo{margin: 0 auto;
+    width: 70%;}
+.logo img{width: 100%;
+    height: auto;}
+.options img{width:100px;height: 100px;}
+.power{float:right}
+.settings{float: left;}
+
+.volume img{
+    width: 100px;
+    height: 100px;
 }
