@@ -23,6 +23,8 @@ margin:0 auto;
 .settings{float: left;}
 
 .volume img{
-    width: 100px;
-    height: 100px;
+width: 100px;
+height: 100px;
+padding: 5px;
 }
+.play, .stop{padding:5px;}
