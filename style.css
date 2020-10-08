@@ -1,0 +1,28 @@
+div.player {
+padding-top: 5%;
+width: 75%;
+height: 100%;
+margin:0 auto;
+
+}
+.player-main{
+width: 621px;
+height: 976px;
+background-repeat: no-repeat;
+margin:0 auto;
+
+}
+.player-cont{height: 100%;padding-top: 30%;}
+.player-head{width: 84%;height: 50%;margin: 0 auto;}
+.logo{margin: 0 auto;
+    width: 70%;}
+.logo img{width: 100%;
+    height: auto;}
+.options img{width:100px;height: 100px;}
+.power{float:right}
+.settings{float: left;}
+
+.volume img{
+    width: 100px;
+    height: 100px;
+}
