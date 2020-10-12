@@ -2,6 +2,30 @@
   <link rel="stylesheet" href="style.css">        
 <title>Fm1 player</title>
 </head>
+<audio id="myAudio" hidden src="C:\Users\babis\Documents\GitHub\JSmediaplayer\fm1 player\music\test.mp3" type="audio/mp3"></audio>
+<script>
+  var myAudio = document.getElementById("myAudio");
+  var isPlaying = false;
+  myAudio.volume = 1;
+
+  function togglePause() {
+
+      myAudio.pause()
+  };
+  
+  function togglePlay() {
+
+    myAudio.play()
+};
+function volume(value){
+  myAudio.volume = myAudio.volume+value ;
+  if(value==0){myAudio.volume=0}
+  if(myAudio.volume<0){alert('tooSilent'); myAudio.volume=0}
+  if(myAudio.volume>1){alert('tooLoud'); myAudio.volume=1}
+
+}
+</script>  
+
 <body>
     <div class="player">
       <div class="player-main" style="background-image:url(buttons/6.png">
@@ -16,18 +40,18 @@
             
           <div class="player-body" style="width:75%;/*! padding-left: 20%; */">
             <div style="width:100%; display:flex;padding-left: 25%;" class="volume">
-                <div style="/*! width:33.3% */   " class="incr-volume"><img src="buttons/12.png"></div>
-                <div style="/*! width:33.3%; */  " class="mute-volume"><img src="buttons/10.png"></div>
-                <div style="/*! width:33.3%; */  " class="decr-volume"><img src="buttons/11.png"></div>
+                <div style="/*! width:33.3% */   " class="incr-volume" onclick="volume(0.2)"><img src="buttons/12.png"></div>
+                <div style="/*! width:33.3%; */  " class="mute-volume" onclick="volume(0)"><img src="buttons/10.png"></div>
+                <div style="/*! width:33.3%; */  " class="decr-volume" onclick="volume(-0.2)"><img src="buttons/11.png"></div>
             </div>
             <div class="stream-controls" style="width:100%; display:flex;padding-left: 38%;">
-              <div class="play" style="width:30%; "><img src="buttons/1.png" style="width:100px"></div>
-              <div class="stop" style="width:30%;  "><img src="buttons/3.png" style="width:100px"></div>
+              <div class="play" style="width:30%; " onclick="togglePlay()"><img src="buttons/1.png" style="width:100px"></div>
+              <div class="stop" style="width:30%; " onclick="togglePause()"><img src="buttons/3.png" style="width:100px"></div>
             </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
+</div>
 
-
-</div></body></html>
+</body></html>
