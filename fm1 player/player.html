@@ -21,8 +21,12 @@
 function volume(value){
   myAudio.volume = myAudio.volume+value ;
   if(value==0){myAudio.volume=0}
-  if(myAudio.volume<0){alert('tooSilent'); myAudio.volume=0}
-  if(myAudio.volume>1){alert('tooLoud'); myAudio.volume=1}
+  if(myAudio.volume<0){
+    alert('tooSilent')
+    myAudio.volume=0}
+  if(myAudio.volume>1){
+      alert('tooLoud') 
+      myAudio.volume=1}
 
 }
 </script>  
