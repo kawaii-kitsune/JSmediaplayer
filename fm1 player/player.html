@@ -8,9 +8,10 @@
   var isPlaying = false;
   myAudio.volume = 1;
 
-  function togglePause() {
+  function toggleStop() {
 
       myAudio.pause()
+      myAudio.currentTime = 0
   };
   
   function togglePlay() {
@@ -46,7 +47,7 @@ function volume(value){
             </div>
             <div class="stream-controls" style="width:100%; display:flex;padding-left: 38%;">
               <div class="play" style="width:30%; " onclick="togglePlay()"><img src="buttons/1.png" style="width:100px"></div>
-              <div class="stop" style="width:30%; " onclick="togglePause()"><img src="buttons/3.png" style="width:100px"></div>
+              <div class="stop" style="width:30%; " onclick="toggleStop()"><img src="buttons/3.png" style="width:100px"></div>
             </div>
           </div>
         </div>
