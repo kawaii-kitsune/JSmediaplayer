@@ -15,10 +15,12 @@ new Vue({
     methods: {
         stopHandler: function() {
             this.myAudio.pause()
+
             this.sliderValue = 0
         },
         playHandler: function() {
             this.myAudio.play()
+            
             this.myAudio.volume = this.sliderValue = 1
         },
         increaseSound: function () {
