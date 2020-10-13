@@ -1,17 +1,3 @@
-div.player {
-padding-top: 5%;
-width: 75%;
-height: 100%;
-margin:0 auto;
-
-}
-.player-main{
-width: 621px;
-height: 976px;
-background-repeat: no-repeat;
-margin:0 auto;
-
-}
 .player-cont{height: 100%;padding-top: 30%;}
 .player-head{width: 84%;height: 50%;margin: 0 auto;}
 .logo{margin: 0 auto;
@@ -22,9 +8,31 @@ margin:0 auto;
 .power{float:right}
 .settings{float: left;}
 
+div.player {
+    padding-top: 5%;
+    width: 75%;
+    height: 100%;
+    margin:0 auto;
+}
+
+.player-main{
+    width: 621px;
+    height: 976px;
+    background-repeat: no-repeat;
+    margin:0 auto;
+}
+
 .volume img{
 width: 100px;
 height: 100px;
 padding: 5px;
 }
-.play, .stop{padding:5px;}
+
+.play, .stop {
+    padding: 5px;
+}
+
+.range_class {
+    position: relative;
+    left: 35%;
+}
