@@ -4,7 +4,7 @@ new Vue({
         return {
             isPlaying: false,
             myAudio: null,
-            volume_change_prefix: 0.2,
+            volume_change_prefix: 0.1,
             sliderValue: 1, //initial value
         }
     },
