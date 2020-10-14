@@ -15,7 +15,7 @@ new Vue({
     methods: {
         stopHandler: function() {
             this.myAudio.pause()
-
+            myAudio.currentTime = 0
             this.sliderValue = 0
         },
         playHandler: function() {
