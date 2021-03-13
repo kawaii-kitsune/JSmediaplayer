@@ -45,7 +45,13 @@ new Vue({
                         <div class="player-head">
                             <div class="options">
                                 <div class="settings"><img src="buttons/14.png"></div>
-                                <div class="power"><img src="buttons/13.png"></div>
+                                    <div class="power">
+                                        <img src="buttons/13.png">
+                                        <div id="chat" style="height: 500px; display:none;" ><div id="rt-8a8b7c6e6392daffbbb29a1af5d1462f">
+                                        </div>
+                                         <script src="https://rumbletalk.com/client/?vZ-IzZnP"></script>
+                                         </div>
+                                     </div>
                             </div>
                             <div class="logo"><img src="images/logo.jpg"></div>
                             <div class="player-body" style="width:75%;/*! padding-left: 20%; */"></div>
